@@ -1,0 +1,82 @@
+.articles {
+    margin-bottom: 80px;
+    @media (max-width: $breakpoint1280) {
+        margin-bottom: 50px;
+    }
+    &__title {
+        font-size: $font-size;
+        font-weight: $font-weigth2;
+        line-height: $line-height;
+        color: $font-color2;
+        margin-bottom: 30px;
+        @media (max-width: $breakpoint1280) {
+            font-size: $font-size5;
+            margin-bottom: 20px;
+        }
+    }
+}
+.article-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 60px;
+    @media (max-width: $breakpoint1539) {
+        gap: 30px 24px;
+    }
+    @media (max-width: $breakpoint1431) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: $breakpoint1280) {
+        row-gap: 20px;
+    }
+    @media (max-width: $breakpoint1093) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $breakpoint728) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.article {
+    background-color: $accent-color4;
+    border-radius: $border-radius5;
+    font-size: 0;
+    height: 100%;
+    &__img {
+        width: 100%;
+        border-radius: $border-radius5 $border-radius5 0 0;
+        margin-bottom: 15px;
+    }
+    &__content {
+        padding: 0 20px 25px 20px;
+        @media (max-width: $breakpoint1280) {
+            padding: 0 15px 20px 15px;
+        }
+    }
+    &__title {
+        font-size: $font-size2;
+        font-weight: $font-weigth2;
+        line-height: $line-height;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: $font-size7;
+        line-height: $line-height;
+        font-weight: $font-weigth;
+        margin-bottom: 15px;
+    }
+    &__link {
+        max-width: 122px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: $font-size7;
+        font-weight: $font-weigth;
+        line-height: $line-height;
+        color: $accent-color5;
+        transition: .3s ease-out;
+        &:hover {
+            opacity: .7;
+            transform: translateX(10px);
+            transition: .3s ease-out;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.footer {
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: $font-weigth;
+        line-height: $line-height;
+        column-gap: 10px;
+        color: $font-color2;
+        font-size: $font-size6;
+        transition: .3s ease-out;
+        &:hover {
+            color: $accent-color5;
+            transition: .3s ease-out;
+        }
+    }
+}
+.footer-top {
+    background-color: $accent-color2;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 52px 0 48px 0;
+        margin-bottom: 2px;
+        @media (max-width: $breakpoint1280) {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: unset;
+            padding: 25px 0 25px 0;
+        }
+    }
+    &__start {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @media (max-width: $breakpoint1280) {
+            row-gap: 20px;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: $font-size4;
+        font-weight: $font-weigth;
+        line-height: $line-height;
+        @media (max-width: $breakpoint1280) {
+            font-size: $font-size7;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 169px;
+        @media (max-width: $breakpoint1440) {
+            column-gap: 130px;
+        }
+        @media (max-width: $breakpoint1317) {
+            column-gap: 100px;
+        }
+        @media (max-width: $breakpoint1280) {
+            display: block;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @media (max-width: $breakpoint1280) {
+            row-gap: 10px;
+        }
+    }
+    
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    @media (max-width: $breakpoint1280) {
+        row-gap: 12px;
+    }
+    &__link {
+        font-size: $font-size4;
+        font-weight: $font-weigth;
+        line-height: $line-height;
+        color: $font-color2;
+        transition: .3s ease-out;
+        &:hover {
+            color: $accent-color5;
+            transition: .3s ease-out;
+        }
+        @media (max-width: $breakpoint1280) {
+            font-size: $font-size7;
+        }
+    }
+    @media (max-width: $breakpoint1280) {
+        margin-bottom: 12px;
+        &:nth-child(2) {
+           margin-bottom: 20px;
+        }
+    }
+}
+.footer-links-right {
+    display: flex;
+    row-gap: 45px;
+    @media (max-width: $breakpoint1280) {
+        row-gap: 20px;
+    }
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    @media (max-width: $breakpoint1280) {
+        justify-content: unset;
+    }
+    &__item {
+        width: 35px;
+        height: 35px;
+        font-size: 0;
+    }
+    &__link {
+        display: block;
+        transition: .3s ease-out;
+        &:hover {
+            transform: scale(1.2);
+            transition: .3s ease-out;
+        }
+    }
+}
+.footer-bottom {
+    padding: 18px 0 22px 0;
+    background-color: $accent-color2;
+    @media (max-width: $breakpoint1280) {
+        padding: 25px 0;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: $breakpoint1280) {
+            flex-direction: column;
+            align-items: unset;
+            row-gap: 13px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 98px;
+        @media (max-width: $breakpoint1280) {
+            flex-direction: column;
+            row-gap: 13px;
+        }
+    }
+    &__copy {
+        font-weight: $font-weigth;
+        color: $font-color2;
+        @media (max-width: $breakpoint1280) {
+           font-size: 14px;
+        }
+    }
+    &__link {
+        font-weight: $font-weigth;
+        color: $font-color2;
+        transition: .3s ease-out;
+        &:hover {
+            color: $accent-color5;
+            transition: .3s ease-out;
+        }
+        @media (max-width: $breakpoint1280) {
+            font-size: 14px;
+        }
+    }
+}
+.tel-footer {
+    @media (max-width: $breakpoint1280) {
+        max-width: 200px;
+        font-size: $font-size7;
+        padding: 0 10px;
+        justify-content: center;
+        min-height: 35px;
+        border-radius: 6px;
+    }
+}

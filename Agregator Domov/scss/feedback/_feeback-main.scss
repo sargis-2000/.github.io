@@ -1,0 +1,29 @@
+.feedback {
+    margin-bottom: 50px;
+    &__title {
+        font-size: $font-size;
+        font-weight: $font-weigth2;
+        line-height: $line-height;
+        color: $font-color2;
+        margin-bottom: 30px;
+        @media (max-width: $breakpoint1280) {
+            font-size: $font-size5;
+            margin-bottom: 20px;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @media (max-width: $breakpoint1280) {
+            margin-bottom: 30px;
+            row-gap: 20px;
+        }
+    }
+}
+.feedback-show {
+    display: none !important;
+    @media (max-width: $breakpoint1280) {
+        display: flex !important;
+    }
+}

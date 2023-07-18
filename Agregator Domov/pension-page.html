@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница пансионата</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/pension.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-top">
+                <a class="home" href="#">
+                    <img src="./images/header/header-icon1.svg" alt="icon">
+                    <span class="home__text">Агрегатор<br> домов престарелых</span>
+                </a>
+                <ul class="nav-top__list">
+                    <li class="nav-top__item country">
+                        <span class="nav-top__item-text">Ваш город</span>
+                        <button class="nav-top__btn">
+                            Москва
+                        </button>
+                    </li>
+                    <li class="nav-top__item nav-top__item-map">
+                        <a class="nav-top__link" href="#">
+                            <img src="./images/header/header-icon2.svg" alt="icon">
+                            Пансионаты на карте
+                        </a>
+                    </li>
+                    <li class="nav-top__item tel-item">
+                        <img src="./images/header/header-icon3.svg" alt="icon">
+                        +8 999 99 99
+                    </li>
+                    <li class="nav-top__item tel-btn">
+                        <a class="tel" href="tel:89999999">Перезвоните мне</a>
+                    </li>
+                    <li class="nav-top__item tel-mobile">
+                        <a href="tel:89999999">
+                            <img src="./images/header/tel-icon-mobile.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li class="nav-top__item burger">
+                        <button class="burger-btn">
+                            <img class="burger-btn__icon" src="./images/header/burger-icon.svg" alt="icon">
+                            <img class="burger-btn__close-icon hide" src="./images/header/burger-close-icon.svg" alt="icon">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-middle">
+                <div class="nav-middle__top">
+                    <span class="nav-middle__text">Ваш город</span>
+                    <button class="nav-middle__btn">
+                        Москва
+                    </button>
+                </div>
+                <ul class="nav-middle__list">
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Пансионаты для пожилых
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Дома престарелых
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Дома интернаты
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Реабилитационные центры
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Отзывы
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Контакты
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                    <li class="nav-middle__item">
+                        <a class="nav-middle__link" href="#">
+                            Статьи
+                        </a>
+                        <img class="nav-middle__icon" src="./images/header/link-icon-mobile.svg" alt="icon">
+                    </li>
+                </ul>
+                <a class="tel tel-btn-mobile" href="tel:+89999999">Перезвоните мне</a>
+            </nav>
+            <nav class="nav-bottom">
+                <a class="nav-bottom__link" href="#">
+                    Главная
+                </a>
+                <span class="nav-bottom__line"></span>
+                <a class="nav-bottom__link" href="#">
+                    Пансионаты для пожилых
+                </a>
+                <span class="nav-bottom__line"></span>
+                <a class="nav-bottom__link" href="#">
+                    Сеть пансионатов
+                </a>
+                <span class="nav-bottom__line"></span>
+                <a class="nav-bottom__link" href="#">
+                    Пансионат для пожилых «Зеленоград 2»
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+            <div class="pension">
+                <div class="info">
+                    <h2 class="info__title info-mobile-title">Пансионат для пожилых Балашиха</h2>
+                    <p class="info__text info-mobile-text">Сеть пансионатов</p>
+                    <div class="slider"> 
+                        <div class="info__slider swiper">
+                            <div class="info__slider-wrapper swiper-wrapper">
+                                <div class="info__slide swiper-slide">
+                                    <img class="pension-img" src="./images/pension/pension-img.jpg" alt="slide">
+                                </div>
+                                <div class="info__slide swiper-slide">
+                                    <img class="pension-img" src="./images/pension/pension-img.jpg" alt="slide">
+                                </div>
+                                <div class="info__slide swiper-slide">
+                                    <img class="pension-img" src="./images/pension/pension-img.jpg" alt="slide">
+                                </div>
+                                <div class="info__slide swiper-slide">
+                                    <img class="pension-img" src="./images/pension/pension-img.jpg" alt="slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnails swiper">
+                            <div class="thumbnails__wrapper swiper-wrapper">
+                                <div class="thumb swiper-slide">
+                                    <img class="thumb__img" src="./images/pension/pension-img.jpg" alt="thumbnail">
+                                </div>
+                                <div class="thumb swiper-slide">
+                                    <img class="thumb__img" src="./images/pension/pension-img.jpg" alt="thumbnail">
+                                </div>
+                                <div class="thumb swiper-slide">
+                                    <img class="thumb__img" src="./images/pension/pension-img.jpg" alt="thumbnail">
+                                </div>
+                                <div class="thumb swiper-slide">
+                                    <img class="thumb__img" src="./images/pension/pension-img.jpg" alt="thumbnail">
+                                </div>
+                                <div class="thumb last">
+                                    <img class="thumb__img" src="./images/pension/pension-img.jpg" alt="thumbnail">
+                                    <span class="last__text">+ 8 фото</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-right">
+                        <div class="info-right__start">
+                            <h2 class="info__title">Пансионат для пожилых Балашиха</h2>
+                            <p class="info__price">
+                                2000₽<span class="info-right__symbol">/</span><span class="info-right__day">сут</span>
+                            </p>
+                        </div>
+                        <p class="info__text">Сеть пансионатов</p>
+                        <ul class="info-right__contacts">
+                            <li class="info-right__item">
+                                <span class="info-right__inside info-tel">
+                                    <img class="info-tel__icon" src="./images/header/header-icon3.svg" alt="icon">
+                                    <strong class="info-right__top">Телефон</strong>
+                                    <span>+8 999 999 99 99</span>
+                                </span>
+                            </li>
+                            <li class="info-right__item address">
+                                <span class="info-right__inside info-address">
+                                    <img src="./images/header/header-icon2.svg" alt="icon">
+                                    <strong class="info-right__top">Адрес</strong>
+                                    Балашиха, мкр. Кучино, Леоновское шоссе
+                                </span>
+                                <span class="info-right__inside info-workhours">
+                                    <img src="./images/home/footer-icon1.svg" alt="icon">
+                                    <strong class="info-right__top">Режим работы</strong>
+                                    Пн-Вс 10:00 - 20:00
+                                </span>
+                            </li>
+                            <li class="info-right__item places">
+                                <span class="info-right__inside capacity">
+                                    <img src="./images/pension/pension-icon1.svg" alt="icon">
+                                    Вместимость:
+                                    <strong class="info-right__strong capacity__text">100 мест</strong>
+                                </span>
+                                <span class="info-right__inside fund">
+                                    Номерной фонд:
+                                    <strong class="info-right__strong fund__text">100 мест</strong>
+                                </span>
+                            </li>
+                            <li class="info-right__item website">
+                                <span class="info-right__inside">
+                                    <img src="./images/pension/pension-icon2.svg" alt="icon">
+                                    Сайт:
+                                </span>
+                                <a class="info-right__link" href="#">
+                                    Пансионат для пожилых Балашиха
+                                </a>
+                            </li>
+                            <li class="info-right__item mail">
+                                <span class="info-right__inside">
+                                    <img src="./images/pension/pension-icon3.svg" alt="icon">
+                                    Почта:
+                                </span>
+                                <a class="info-right__link" href="mailto:pansionat@gmail.com">
+                                    pansionat@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="./images/home/content-right-img1.png" alt="img">
+                    </div>
+                </div>
+                <div class="benefits">
+                    <h2 class="benefits__title">Есть</h2>
+                    <ul class="benefits-top">
+                        <li class="benefits-top__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-top-icon1.svg" alt="icon">
+                            Wi-fi
+                        </li>
+                        <li class="benefits-top__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-top-icon2.svg" alt="icon">
+                            Лифт
+                        </li>
+                        <li class="benefits-top__item alarm-btn">
+                            <img class="benefits__icon" src="./images/pension/benefits-top-icon3.svg" alt="icon">
+                            Тревожная кнопка
+                        </li>
+                        <li class="benefits-top__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-top-icon1.svg" alt="icon">
+                            Wi-fi
+                        </li>
+                    </ul>
+                    <h2 class="benefits__title">Отсутствует</h2>
+                    <ul class="benefits-bottom">
+                        <li class="benefits-bottom__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-bottom-icon1.svg" alt="icon">
+                            Лифт
+                        </li>
+                        <li class="benefits-bottom__item alarm-btn">
+                            <img class="benefits__icon" src="./images/pension/benefits-bottom-icon2.svg" alt="icon">
+                            Тревожная кнопка
+                        </li>
+                        <li class="benefits-bottom__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-bottom-icon3.svg" alt="icon">
+                            Wi-fi
+                        </li>
+                        <li class="benefits-bottom__item">
+                            <img class="benefits__icon" src="./images/pension/benefits-bottom-icon1.svg" alt="icon">
+                            Лифт
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h2 class="description__title">О пансионате</h2>
+                    <p class="description__text">
+                        Если вы хотите, чтобы ваш близкий человек жил в тихом и экологически чистом месте, обратите внимание на пансионат в Балашихе.
+                        В пансионате есть хорошие условия для постоянного проживания. Здесь установлены функциональные кровати, есть безопасная и удобная мебель как в номерах, так и в местах общего пользования. Прилегающая территория облагорожена, и постояльцы смогут гулять круглый год, наслаждаясь свежим чистым воздухом.
+                        В услуги и стоимость размещения входят медицинские осмотры, реабилитационные процедуры, круглосуточный уход. Состояние постояльцев контролируется постоянно: работники следят, чтобы пенсионеры своевременно принимали лекарства и посещали назначенные процедуры, а также хорошо питались.
+                    </p>
+                </div>
+                <div class="feedback">
+                    <button class="feedback__btn">Написать отзыв</button>
+                    <div class="feedback-item">
+                        <div class="feedback-item__top">
+                            <h2 class="feedback-item__title">Дом престарелых Нахабино</h2>
+                            <span class="feedback-item__date">05.01.2023</span>
+                        </div>
+                        <ul class="feedback-item__middle">
+                            <li class="feedback-item__inside">
+                                Цена / Качество:
+                                <span class="feedback-item__stars">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-disabled.svg" alt="star">
+                                </span>
+                            </li>
+                            <li class="feedback-item__inside">
+                                Уход / Чистота
+                                <span class="feedback-item__stars">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                </span>
+                            </li>
+                            <li class="feedback-item__inside">
+                                Расположение
+                                <span class="feedback-item__stars">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                    <img class="rating-star" src="./images/pension/star-active.svg" alt="star">
+                                </span>
+                            </li>
+                        </ul>
+                        <p class="feedback-item__fullname">Трошин Владимир Викторович</p>
+                        <p class="feedback-item__text">
+                            Долго решался на переезд в стардом, чтобы не обременять детей. Не пожалел, обрел друзей и хорошее общение. Вместе коротаем досуг. Жизнь прекрасна и в 79!
+                        </p>
+                        <span class="feedback-item__date mobile-date">05.01.2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup__top">
+                    <h2 class="popup__title">Оставить отзыв</h2>
+                    <button class="popup__close-btn">
+                        <img src="./images/header/burger-close-icon.svg" alt="icon">
+                    </button>
+                </div>
+                <ul class="rating">
+                    <li class="rating__item">
+                        Цена / Качество:
+                        <ul class="rating__stars">
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" id="st1" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" id="st2" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" id="st3" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" id="st4" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" id="st5" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rating__item">
+                        Уход / Чистота
+                        <ul class="rating__stars">
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-middle" id="sm1" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-middle" id="sm2" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-middle" id="sm3" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-middle" id="sm4" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars-item">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-middle" id="sm5" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rating__item">
+                        Расположение
+                        <ul class="rating__stars">
+                            <li class="rating__stars">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-bottom" id="sb1" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-bottom" id="sb2" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-bottom" id="sb3" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-bottom" id="sb4" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                            <li class="rating__stars">
+                                <svg class="star-svg" width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star-bottom" id="sb5" d="M16.0245 0.463523C16.1741 0.00286794 16.8259 0.00287008 16.9755 0.463525L20.3167 10.7467C20.3837 10.9527 20.5757 11.0922 20.7923 11.0922L31.6046 11.0922C32.089 11.0922 32.2904 11.712 31.8985 11.9967L23.1511 18.3521C22.9759 18.4794 22.9026 18.7051 22.9695 18.9111L26.3107 29.1943C26.4604 29.6549 25.9331 30.038 25.5413 29.7533L16.7939 23.3979C16.6186 23.2706 16.3814 23.2706 16.2061 23.3979L7.45871 29.7533C7.06685 30.038 6.53961 29.6549 6.68929 29.1943L10.0305 18.9111C10.0974 18.7051 10.0241 18.4794 9.84886 18.3521L1.10146 11.9967C0.709601 11.712 0.91099 11.0922 1.39535 11.0922L12.2077 11.0922C12.4243 11.0922 12.6163 10.9527 12.6833 10.7467L16.0245 0.463523Z" fill="#B6C9DA"/>
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="#" class="popup__form">
+                    <div class="popup__input-wrapper">
+                        <input class="popup__input" type="text" name="name" placeholder="Ваше имя">
+                        <input class="popup__input" type="tel" name="tel" placeholder="Номер телефона">
+                        <input class="popup__input" type="text" name="feedback" placeholder="Отзыв">
+                    </div>
+                        <label class="popup__accept" for="accept">
+                            <input class="popup__checkbox" type="checkbox" name="" id="accept">
+                            Согласен на обработку персональных данных
+                        </label>
+                    <button class="popup__btn" type="submit">Оставить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__items">
+                    <ul class="footer-top__start">
+                        <li class="footer-top__item">
+                            <a class="footer__link" href="#">
+                                <img src="./images/header/header-icon1.svg" alt="icon">
+                                Агрегатор<br> домов престарелых
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <ul class="footer-top__info">
+                                <li class="footer-top__item">
+                                    <img src="./images/home/footer-icon1.svg" alt="icon">
+                                    Пн-Вс 10:00 - 20:00
+                                </li>
+                                <li class="footer-top__item">
+                                    <img src="./images/header/header-icon3.svg" alt="icon">
+                                    +8 999 999 99 99
+                                </li>
+                                <li class="footer-top__item">
+                                    <img src="./images/header/header-icon2.svg" alt="icon">
+                                    Москва, Лучников пер., 4с1
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <nav class="footer-top__links">
+                        <ul class="footer-links">
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Пансионаты для пожилых</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Дома престарелых</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Дома интернаты</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Реабилитационные центры</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-links">
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a class="footer-links__link" href="#">Статьи</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-links footer-links-right">
+                            <li class="footer-links__item">
+                                <a class="tel tel-footer" href="tel:89999999">Перезвоните мне</a>
+                            </li>
+                            <li class="footer-links__item">
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <img src="./images/social/social-icon1.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <img src="./images/social/social-icon2.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <img src="./images/social/social-icon3.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__items">
+                <p class="footer-bottom__copy">© 2023 pansionat</p>
+                <nav class="footer-bottom__links">
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item">
+                            <a href="mailto:info@vse-pansionaty.ru" class="footer-bottom__link">info@vse-pansionaty.ru</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">Политика использования Cookie файлов</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/pension.js"></script>
+</body>
+</html>

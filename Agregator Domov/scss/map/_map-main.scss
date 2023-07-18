@@ -1,0 +1,14 @@
+.map {
+    margin-bottom: 80px;
+}
+.title {
+    font-size: $font-size;
+    font-weight: $font-weigth2;
+    line-height: $line-height;
+    color: $font-color2;
+    margin-bottom: 30px;
+    @media (max-width: $breakpoint1280) {
+        font-size: $font-size5;
+        margin-bottom: 20px;
+    }
+}
